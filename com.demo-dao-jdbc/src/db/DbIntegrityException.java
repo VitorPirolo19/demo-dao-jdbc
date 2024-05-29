@@ -1,4 +1,4 @@
-package testesSoltos.jdbc.db;
+package db;
 
 public class DbIntegrityException extends RuntimeException{
     public DbIntegrityException(String msg){
