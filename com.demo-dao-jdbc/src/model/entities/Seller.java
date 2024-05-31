@@ -1,8 +1,8 @@
 package model.entities;
 
 import java.io.Serializable;
+import java.sql.Date;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Objects;
 
 public class Seller implements Serializable {
@@ -49,8 +49,8 @@ public class Seller implements Serializable {
         this.email = email;
     }
 
-    public LocalDate getBirthDate() {
-        return birthDate;
+    public java.sql.Date getBirthDate() {
+        return Date.valueOf(birthDate);
     }
 
     public void setBirthDate(LocalDate birthDate) {
